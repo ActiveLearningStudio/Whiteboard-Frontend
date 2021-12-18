@@ -1,0 +1,83 @@
+/* body {
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+}
+
+#root {
+	height: 100% !important;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#components-layout-demo-responsive .logo {
+	height: 32px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 16px;
+}
+
+.site-layout-sub-header-background {
+	background: #fff;
+}
+
+.site-layout-background {
+	background: #fff;
+	min-height: calc(100% - 64px);
+} */
+
+/* .ant-layout-sider {
+	position: absolute !important;
+	z-index: 1 !important;
+	height: 100% !important;
+} */
+/* 
+.p_10 {
+	padding: 20px;
+} */
+
+.image-loader {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+.image-loader .loader {
+	border: 1px solid #4261ff;
+	border-top: 1px solid transparent;
+	border-radius: 50%;
+	width: 1.5rem;
+	height: 1.5rem;
+	animation: spin 0.4s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#root {
+	/* height: 100%; */
+}
+
+.no-data-container {
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#root {
+	height: 100% !important;
+}

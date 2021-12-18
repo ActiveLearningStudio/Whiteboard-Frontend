@@ -1,0 +1,56 @@
+@import '../../constants/_variables.scss';
+
+.flyers_table {
+	&__outer {
+		width: 100%;
+		// border: 1px solid #ddd;
+		display: table;
+	}
+	&__header {
+		display: table-row;
+		// background-color: red;
+	}
+	&__header_cell {
+		display: table-cell;
+		padding: 10px;
+		border-bottom: 1px solid #ddd;
+		font-weight: 600;
+		// background-color: red;
+	}
+	&__row {
+		display: table-row;
+	}
+	&__cell {
+		border-bottom: 1px solid #ddd;
+		display: table-cell;
+		padding: 10px;
+	}
+}
+
+.action_buttons {
+	.icon {
+		width: 30px;
+		height: 30px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin: 3px;
+		background: #79c448;
+		border-radius: 8px;
+		color: white;
+		cursor: pointer;
+		box-shadow: 0 0px 2.7px rgba(0, 0, 0, 0.022), 0 0px 6.9px rgba(0, 0, 0, 0.031), 0 0px 14.2px rgba(0, 0, 0, 0.039),
+			0 0px 29.2px rgba(0, 0, 0, 0.048), 0 0px 80px rgba(0, 0, 0, 0.07);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	.success {
+		background-color: #79c448 !important;
+	}
+
+	.error {
+		background-color: #ff5655 !important;
+	}
+}

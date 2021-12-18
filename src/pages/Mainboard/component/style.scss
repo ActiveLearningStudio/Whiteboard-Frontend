@@ -1,0 +1,370 @@
+.main__container {
+	display: flex;
+}
+
+.icon__container {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	height: fit-content;
+	width: 60px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	border: none;
+	// box-shadow: 0 7px 15px 0 #cfd1da;
+	// top: 50%;
+	// left: 2%;
+	top: 28%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 13%);
+	// animation: fromLeft 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes fromLeft {
+	0% {
+		left: -2%;
+	}
+	100% {
+		left: 2%;
+	}
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+	// margin-left: 10px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.undo {
+	height: 20px;
+	width: 20px;
+	margin-left: 15px;
+	background-color: #ffffff;
+	border-radius: 8px;
+
+	align-items: center;
+}
+.undo:hover {
+	background-color: #4261ff;
+	color: white;
+}
+.icon:hover {
+	// background-color: #d8d8d8;
+	// color: white;
+}
+.icon:active {
+	// background-color: #b9b9b9;
+}
+.colorPicker {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	width: 150px;
+	background-color: #ffffff;
+	padding: 5px;
+	margin-left: 70px;
+	margin-top: 450px;
+	border-radius: 8px;
+	/* align-items: center; */
+	box-shadow: 0 7px 15px 0 #cfd1da;
+	/* justify-content: space-between; */
+	display: none;
+}
+.colorPicker1 {
+	display: flex;
+	background-color: #ffffff;
+	padding: 5px;
+	border-radius: 8px;
+}
+.tools__pallette,
+.colors__pallette {
+	// border-bottom: 1px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.tools__pallette img {
+	height: 13px;
+	width: 25px;
+	margin-left: 3px;
+	margin-bottom: 10px;
+}
+.tools__pallette img:hover {
+	cursor: pointer;
+}
+.color {
+	height: 15px;
+	width: 15px;
+	border-radius: 8px;
+	margin: 5px;
+	margin-left: 8px;
+}
+.color:hover {
+	box-shadow: 0 7px 15px 0 #cfd1da;
+	// box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.76);
+	// -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.76);
+	// -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.76);
+	cursor: pointer;
+}
+#eraser {
+	height: 20px;
+	width: 20px;
+	padding: 5px;
+}
+#one {
+	background-color: #0000ff;
+	border: none;
+}
+#two {
+	background-color: #009fff;
+	border: none;
+}
+#three {
+	background-color: #0fffff;
+	border: none;
+}
+#four {
+	background-color: #bfffff;
+	border: none;
+}
+#five {
+	background-color: #000000;
+	border: none;
+}
+.team {
+	position: absolute;
+	display: flex;
+	height: 50px;
+	width: 139px;
+	border-radius: 8px;
+	background-color: #4261ff;
+	box-shadow: 0 3px 5px 0 #cfd1da;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 5px;
+	right: 10px;
+	top: 10%;
+	animation: fromRight 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	// background: rgba(66, 97, 255, 0.25);
+	// box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	// backdrop-filter: blur(14px);
+	// -webkit-backdrop-filter: blur(14px);
+	// border-radius: 10px;
+	// border: 1px solid rgba(255, 255, 255, 0.18);
+
+	background: rgba(66, 97, 255, 0.55);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@keyframes fromRight {
+	0% {
+		right: -100px;
+	}
+	100% {
+		right: 10px;
+	}
+}
+.team__meet {
+	// background-color: #4261ff;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	margin-top: 5px;
+	font-weight: 100;
+	background: transparent;
+	cursor: pointer;
+}
+.icon__react {
+	height: 20px;
+	width: 20px;
+	// margin-left: 10px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	// margin-left: 15px;
+	margin-top: 5px;
+}
+.icon__react:hover {
+	background-color: #d8d8d8;
+	color: white;
+}
+.icon__react:active {
+	background-color: #b9b9b9;
+}
+.grid {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 15px;
+	margin-right: 200px;
+}
+.inputs {
+	display: none;
+}
+.lineWidth {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+.font__fam {
+	position: absolute;
+	top: 28%;
+	left: 7%;
+}
+.customPopOverStyle {
+	.ant-popover-content {
+		border-radius: 8px;
+	}
+	.ant-popover-inner {
+		border-radius: 8px;
+		box-shadow: 0 7px 15px 0 #cfd1da;
+	}
+	.ant-popover-inner-content {
+		padding: 0;
+		.colorPicker1 {
+			padding: 0;
+			.tool_style {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 5px;
+				&:last-child {
+					padding-bottom: 5px;
+				}
+				&.active {
+					background-color: #d8d8d8;
+				}
+				img {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.toolBarComponent {
+	height: fit-content;
+	width: max-content;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 7px 15px 0 #8282868a;
+	animation: fromRightTool 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+	top: 50%;
+	right: 0;
+	transform: translate(0%, -50%);
+	padding: 10px;
+	.text-color {
+		display: block;
+	}
+	.colors__pallette {
+		// padding-bottom: 10px;
+		flex-direction: row;
+		button {
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	.remove_item_style {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.colors__pallette {
+			svg {
+				margin: 0;
+			}
+		}
+		padding-bottom: 10px;
+	}
+}
+
+@keyframes fromRightTool {
+	0% {
+		right: -100px;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+// .line-content-container {
+// 	display: flex;
+// 	flex-direction: column;
+// 	#text {
+// 		display: block;
+// 		padding: 5px;
+// 		&:last-child {
+// 			padding-bottom: 5px;
+// 		}
+// 		&.active {
+// 			background-color: #d8d8d8;
+// 		}
+// 		.icon {
+// 			margin: 0;
+// 			background-color: inherit;
+// 		}
+// 	}
+// }
+
+.toolIcon {
+	&.active {
+		background-color: #d8d8d8;
+	}
+}
+
+.toolIconStyle {
+	display: flex !important;
+	justify-self: center !important;
+	align-items: center !important;
+	&.active {
+		.icon__react {
+			background-color: #d8d8d8;
+		}
+	}
+}
+
+.custom_fill_color {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.fill-color-container {
+	border-top: 1px solid #d8d8d8;
+	padding-top: 5px;
+}
+
+.updating-loader {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #4261ff;
+	svg {
+		font-size: 1rem;
+	}
+}
+
+.confetti-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}

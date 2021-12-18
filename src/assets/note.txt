@@ -1,0 +1,1 @@
+Any assets like images, etc used in the app

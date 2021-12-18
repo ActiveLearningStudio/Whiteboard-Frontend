@@ -1,0 +1,151 @@
+@import '../../constants/_variables.scss';
+
+$loaderSize: 20px;
+
+.flyers_button {
+	background-image: linear-gradient(to right, #ff6e7f 0%, #ffffff00 51%, #ff6e7f 100%);
+	// background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+	// margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&.noShadow {
+		box-shadow: none !important;
+	}
+	&.primary {
+		background-image: linear-gradient(to right, #4261ff 0%, #ffffff00 51%, #4261ff 100%);
+		padding: 10px 45px;
+		text-align: center;
+		text-transform: uppercase;
+		transition: 0.5s;
+		background-size: 200% auto;
+		color: white;
+		box-shadow: 0 0 20px #eee;
+		border-radius: 8px;
+		display: block;
+		outline: none;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:disabled {
+			background: $greyColor2;
+			color: $greyColor4 !important;
+			border: 2px solid $greyColor2 !important;
+			cursor: not-allowed;
+			box-shadow: none;
+			&:hover {
+				box-shadow: none;
+			}
+		}
+	}
+	&.outline {
+		border: 2px solid $secondaryColor1;
+		padding: 12px 30px;
+		box-sizing: border-box;
+		color: $secondaryColor5;
+		&:disabled {
+			border: 2px solid $greyColor2 !important;
+			background: $greyColor2;
+			color: $greyColor7 !important;
+		}
+	}
+	&.outline_grey {
+		padding: 12px 30px;
+		box-sizing: border-box;
+		color: #dfe1e6;
+		background: #f7f8fa;
+	}
+	&.outline_blue {
+		width: 243px;
+		min-width: 243px;
+		min-height: 32px;
+		padding: 0px 0px;
+		height: 32px;
+		font-family: Montserrat-Regular;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: #484b52;
+		border: 1px solid #71b0d0;
+	}
+	&.outline-g {
+		border: 2px solid $greyColor4;
+		padding: 12px 30px;
+		box-sizing: border-box;
+		color: $primaryColor5;
+		&:disabled {
+			border: 2px solid $greyColor2 !important;
+			background: $greyColor2;
+			color: $greyColor4 !important;
+			cursor: not-allowed;
+			box-shadow: none;
+			&:hover {
+				box-shadow: none;
+			}
+			border: 2px solid $greyColor2;
+		}
+	}
+	&.loading {
+		background: $secondaryGradient1;
+		cursor: not-allowed;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+	&:hover {
+		// box-shadow: 0px 10px 20px rgba(233, 180, 175, 0.75);
+		background-position: right center; /* change the direction of the change here */
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.loader {
+		border: 2px solid $greyColor2;
+		border-top: 2px solid transparent;
+		border-radius: $loaderSize/2;
+		width: $loaderSize;
+		height: $loaderSize;
+		animation: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}
+.disablebutton {
+	opacity: 0.5;
+	// box-shadow: 0px 5px 10px rgb(220 224 224 / 25%);
+	cursor: not-allowed !important;
+	pointer-events: none;
+}
+
+.flyers-scendory-btn {
+	background-position: right center;
+	min-width: 100px;
+	background-color: #ff6e7f;
+	border-top-right-radius: 20px !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	border-bottom-left-radius: 0 !important;
+	padding: 10px 25px !important;
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <ellipse id="ellipse-1" cx="8.053" cy="18.58" rx="2.368" ry="2.42"/>
+    <mask id="mask-2" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="21" height="21" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#ellipse-1"/>
+    </mask>
+    <path id="path-4" fill-rule="evenodd" d="M8.05263158 2.96782842c3.39863462 0 6.15789474 2.75926011 6.15789474 6.15789474v7.977494H1.89473684v-7.977494c-5e-8-3.39863454 2.75926002-6.1578947 6.15789465-6.15789474z"/>
+    <mask id="mask-5" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="21" height="21" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-4"/>
+    </mask>
+    <ellipse id="ellipse-6" cx="13.737" cy="6.355" rx="4.263" ry="4.355"/>
+    <filter id="filter-7" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="1.807"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0.4745098039215686  0 0 0 0 0.5568627450980392  0 0 0 0 0.9921568627450981  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <use fill-opacity="0" stroke="rgb(75,75,75)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" mask="url(#mask-2)" xlink:href="#ellipse-1"/>
+      <path fill="rgb(75,75,75)" fill-rule="evenodd" d="M.47117962 16.1608579h15.16290391c.26005112 0 .47117963.21112852.47117963.47117963 0 .26005112-.21112851.47117963-.47117963.47117963H.47117963C.2111285 17.10321716 0 16.89208865 0 16.63203753c0-.26005111.21112851-.47117962.47117962-.47117962z"/>
+      <use fill-opacity="0" stroke="rgb(75,75,75)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" mask="url(#mask-5)" xlink:href="#path-4"/>
+    </g>
+    <g>
+      <use fill="black" stroke="black" stroke-opacity="0" stroke-width="0" filter="url(#filter-7)" xlink:href="#ellipse-6"/>
+      <use fill="rgb(66,97,255)" xlink:href="#ellipse-6"/>
+    </g>
+  </g>
+</svg>

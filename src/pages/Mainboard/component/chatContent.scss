@@ -1,0 +1,252 @@
+.chat__ui {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+	min-width: 20%;
+	height: 100%;
+	// height: calc(100vh - 50px);
+	width: 40%;
+	// top: 56px;
+	background-color: #ffffff;
+	right: 0;
+	z-index: 2;
+	box-shadow: 0 2px 4px 0 #dfe1ec;
+	.chat-content {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.chat-header {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	box-shadow: 0 2px 4px 0 #dfe1ec;
+	padding: 0 10px;
+	justify-content: space-between;
+}
+.closeIcon {
+	height: 18px;
+	width: 18px;
+	color: #63697b;
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+.closeIcon:hover {
+	transform: scale(1.2);
+}
+.closeText {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.chat__search {
+}
+.header__content {
+	line-height: 0.7;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h3 {
+		margin: 0;
+	}
+	p {
+		font-size: 9px;
+		color: gray;
+		margin: 0;
+	}
+}
+.chat__body {
+	overflow: scroll;
+	height: 87%;
+}
+
+.chat__icon {
+	padding-top: 38px;
+}
+
+.chat__receiver {
+	background-color: #eaecf2;
+	color: gray;
+	padding: 10px 15px;
+	border-radius: 0px 20px 20px 20px;
+	max-width: 50%;
+	.chat_name {
+		font-weight: bold;
+	}
+	.chat__meta {
+		font-size: 10px;
+		font-weight: bold;
+	}
+}
+
+.chat_item_container {
+	padding-top: 10px;
+	.chat__item {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: row;
+		.chat__iconleft {
+			padding: 0 10px;
+		}
+	}
+	.me {
+		&.chat__item {
+			padding-left: 0px;
+			flex-direction: row-reverse;
+			align-items: flex-end;
+			justify-content: end;
+		}
+		justify-content: start;
+		.chat__receiver {
+			// background-color: #4462ff;
+			background: linear-gradient(-45deg, #3cf0c5, #338aff);
+			color: #fff;
+			border-radius: 20px 20px 0 20px;
+			.chat_name {
+				text-align: right;
+			}
+		}
+	}
+}
+
+// .chat__item {
+// 	display: flex;
+// 	justify-content: end;
+// 	margin-top: 13px;
+// }
+// .chat__right {
+// 	display: flex;
+// 	justify-content: start;
+// 	margin-top: 13px;
+// }
+
+.chat__msg {
+	overflow-wrap: anywhere;
+	cursor: pointer;
+}
+.chat__footer {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	box-shadow: 0 2px 4px 0 #dfe1ec;
+	position: absolute;
+	bottom: 0;
+}
+.footer__icons {
+	cursor: pointer;
+}
+.footer__image1 {
+	height: 21px;
+	width: 26px;
+	margin: 2px;
+	transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+.footer__image1:hover {
+	transform: scale(1.2);
+}
+
+.footer__image2 {
+	height: 21px;
+	width: 26px;
+	margin: 2px;
+	transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+.footer__image2:hover {
+	transform: scale(1.2);
+}
+.footer__input {
+	width: 100%;
+}
+.footer__input > input {
+	width: 100%;
+	border: none;
+}
+.footer__input > input:focus {
+	outline: none;
+}
+.footer__send {
+	cursor: pointer;
+	margin: 0 8px;
+	transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+.footer__send:hover {
+	transform: scale(1.2);
+}
+::webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #6c84ff;
+	border-radius: 10px;
+}
+
+.chat__typing_area {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		padding-right: 0px;
+		list-style: none;
+		.message-item {
+			padding: 10px 0;
+			display: flex;
+		}
+	}
+}
+
+.chat__body {
+	.chat__area {
+		height: -webkit-fill-available;
+		padding-bottom: 10px;
+		position: relative;
+	}
+}
+
+.file_uploading {
+	height: 60px;
+	width: 100%;
+	background-color: white;
+	top: 50px;
+	position: absolute;
+	box-shadow: 0 23px 20px rgb(0 0 0 / 9%), 0 6px 6px rgb(0 0 0 / 18%);
+}
+
+.file_style {
+	.file_name {
+		font-weight: bold;
+	}
+	.file_download {
+		cursor: pointer;
+		font-size: 10px;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+.chat_search_area {
+	&_input {
+		display: flex;
+		border-bottom: 1px solid #d9d9d9;
+		padding: 20px;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		background: white;
+		z-index: 1;
+		.ant-input-search {
+			width: 80%;
+		}
+	}
+}

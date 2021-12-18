@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="31.188" viewBox="0 0 32 31.188">
+  <defs>
+    <path id="path-2" fill-rule="evenodd" d="M10.53333333 9.31683168h10c1.10383005 0 2 .89616995 2 2v9.64480198c0 1.10383005-.89616995 2-2 2h-10c-1.10383005 0-2-.89616995-2-2v-9.64480198c0-1.10383005.89616995-2 2-2z"/>
+    <mask id="mask-3" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="32" height="31.188" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-2"/>
+    </mask>
+  </defs>
+  <g>
+    <g>
+      <g opacity="0">
+        <path fill="rgb(66,97,255)" fill-rule="evenodd" d="M5 0h22c2.75957512 0 5 2.24042488 5 5v21.18811881c0 2.75957512-2.24042488 5-5 5H5c-2.75957512 0-5-2.24042488-5-5V5c0-2.75957512 2.24042488-5 5-5z"/>
+      </g>
+    </g>
+    <use fill-opacity="0" stroke="rgb(31,35,60)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" mask="url(#mask-3)" xlink:href="#path-2"/>
+  </g>
+</svg>

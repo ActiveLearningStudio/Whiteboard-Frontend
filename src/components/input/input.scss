@@ -1,0 +1,14 @@
+@import '../../constants/variables';
+.flyers_input {
+	width: 100%;
+	padding: 10px;
+	outline-color: #ff6e7f;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid black;
+	border-radius: 4px;
+	outline: none;
+	&:focus {
+		border: 1px solid #ff6e7f;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	}
+}

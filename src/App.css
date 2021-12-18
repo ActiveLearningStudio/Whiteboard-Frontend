@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url(./assets/Fonts/Gilroyfont/Gilroy-Medium.otf);
+}
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url(./assets/Fonts/Gilroyfont/Gilroy-Regular.otf);
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url(./assets/Fonts/Gilroyfont/Gilroy-Bold.otf);
+}
+
+@font-face {
+	font-family: 'Gilroy-Semibold';
+	src: url(./assets/Fonts/Gilroyfont/Gilroy-Semibold.otf);
+}
+
+@font-face {
+	font-family: 'Gilroy-Heavy';
+	src: url(./assets/Fonts/Gilroyfont/Gilroy-Heavy.otf);
+}
+
+.App {
+	/* text-align: center; */
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	/* min-height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: unset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(139, 136, 136);
+}
